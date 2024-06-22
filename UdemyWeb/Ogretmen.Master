@@ -18,14 +18,12 @@
 </head>
 <body>
 
-
-
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Menüler</h3>
-                <strong>BS</strong>
+                <strong>MN</strong>
             </div>
 
             <ul class="list-unstyled components">
@@ -35,43 +33,44 @@
                         Öğrenci Listesi
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li><a href="#">Öğrenci Ekle</a></li>
-                        <li><a href="#">Öğrenci Bul</a></li>
-                        <li><a href="#">Öğrenci Sil</a></li>
+                             <li><a href="Default.Aspx"><i class="glyphicon glyphicon-list"></i>Öğrenci Listesi</a></li>
+                        <li><a href="OgrenciEkle.Aspx"><i class="glyphicon glyphicon-plus"></i>Öğrenci Ekle</a></li>
+                        <li><a href="OgrenciBul.Aspx"><i class="glyphicon glyphicon-search"></i>Öğrenci Bul</a></li>
+                   
                     </ul>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <i class="glyphicon glyphicon-education"></i>
                         Dersler
                     </a>
                     <a href="#">
-                        <i class="glyphicon glyphicon-duplicate"></i>
+                        <i class="glyphicon glyphicon-envelope"></i>
                         Mesajlar
                     </a>
 
                 </li>
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-gift"></i>
+                        <i class="glyphicon glyphicon-bell"></i>
                         Duyurular
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-book"></i>
+                        <i class="glyphicon glyphicon-pushpin"></i>
                         Notlar
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-blackboard"></i>
+                        <i class="glyphicon glyphicon-signal"></i>
                         İstatistikler
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-list"></i>
+                        <i class="glyphicon glyphicon-object-align-bottom"></i>
                         Grafikler
                     </a>
                 </li>
@@ -83,7 +82,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-edit"></i>
+                        <i class="glyphicon glyphicon-cog"></i>
                         Ayarlar
                     </a>
                 </li>
@@ -106,10 +105,8 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Page</a></li>
-                            <li><a href="#">Page</a></li>
-                            <li><a href="#">Page</a></li>
-                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Öğrenci Sınav Not Sistemi</a></li>
+                           
                         </ul>
                     </div>
                 </div>

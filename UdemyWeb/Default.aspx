@@ -12,34 +12,28 @@
                 <th scope="col">TELEFON</th>
                 <th scope="col">MAIL</th>
                 <th scope="col">ŞİFRE</th>
+                <th scope="col">İŞLEMLER</th>
 
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@deneme</td>
-                <td>12345</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@deneme</td>
-                <td>12345</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@deneme</td>
-                <td>12345</td>
-            </tr>
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                    <tr>
+                        <td><%#Eval("OGRID") %></td>
+                        <td><%#Eval("OGRAD") %></td>
+                        <td><%#Eval("OGRSOYAD") %></td>
+                        <td><%#Eval("OGRTELEFON") %></td>
+                        <td><%#Eval("OGRMAIL") %></td>
+                        <td><%#Eval("OGRSIFRE") %></td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
+                        </td>
+
+                    </tr>
+                </ItemTemplate>
+            </asp:Repeater>
         </tbody>
     </table>
 </asp:Content>
