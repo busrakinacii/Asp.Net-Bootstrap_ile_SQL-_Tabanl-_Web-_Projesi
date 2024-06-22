@@ -441,6 +441,8 @@
     <Content Include="Dosyalar1\sidebar\style5.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
     <Content Include="OgrenciEkle.aspx" />
+    <Content Include="OgrenciGuncelle.aspx" />
+    <Content Include="OgrenciSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -462,6 +464,20 @@
     </Compile>
     <Compile Include="OgrenciEkle.aspx.designer.cs">
       <DependentUpon>OgrenciEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGuncelle.aspx.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGuncelle.aspx.designer.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciSil.aspx.cs">
+      <DependentUpon>OgrenciSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciSil.aspx.designer.cs">
+      <DependentUpon>OgrenciSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ogretmen.Master.cs">
       <DependentUpon>Ogretmen.Master</DependentUpon>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="OgrenciEkle.aspx.cs" Inherits="UdemyWeb.OgrenciEkle" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="OgrenciGuncelle.aspx.cs" Inherits="UdemyWeb.OgrenciGuncelle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
@@ -6,6 +6,10 @@
 
     <form id="form1" runat="server">
         <div class="form-group">
+            <div>
+                <asp:Label for="TxtOgrID" runat="server" Style="margin-top: 10px">Öğrenci ID</asp:Label>
+                <asp:TextBox ID="TxtOgrID" runat="server" CssClass="form-control" Style="margin-top: 5px" Enabled="false"></asp:TextBox>
+            </div>
             <div>
                 <asp:Label for="TxtOgrAd" runat="server" Style="margin-top: 10px">Öğrenci Adı</asp:Label>
                 <asp:TextBox ID="TxtOgrAd" runat="server" CssClass="form-control" Style="margin-top: 5px"></asp:TextBox>
@@ -30,7 +34,7 @@
                 <asp:Label for="TxtOgrFoto" runat="server" Style="margin-top: 10px">Öğrenci Fotoğraf Linki</asp:Label>
                 <asp:TextBox ID="TxtOgrFoto" runat="server" CssClass="form-control" Style="margin-top: 5px"></asp:TextBox>
             </div>
-            <asp:Button ID="Button1" runat="server" Text="KAYDET" CssClass="btn btn-info" Style="margin-top: 10px" OnClick="Button1_Click"/>
+            <asp:Button ID="Button1" runat="server" Text="GÜNCELLE" CssClass="btn btn-primary" Style="margin-top: 10px" OnClick="Button1_Click" />
         </div>
 
     </form>

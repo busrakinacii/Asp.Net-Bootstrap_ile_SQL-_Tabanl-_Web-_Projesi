@@ -12,6 +12,7 @@
                 <th scope="col">TELEFON</th>
                 <th scope="col">MAIL</th>
                 <th scope="col">ŞİFRE</th>
+                <th scope="col">FOTOĞRAF</th>
                 <th scope="col">İŞLEMLER</th>
 
             </tr>
@@ -26,9 +27,10 @@
                         <td><%#Eval("OGRTELEFON") %></td>
                         <td><%#Eval("OGRMAIL") %></td>
                         <td><%#Eval("OGRSIFRE") %></td>
+                        <td><%#Eval("OGRFOTOGRAF") %></td>
                         <td>
-                            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "~/OgrenciSil.aspx?OGRID="+Eval("OGRID") %>' runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" NavigateUrl='<%# "~/OgrenciGuncelle.aspx?OGRID="+Eval("OGRID") %>' runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
                         </td>
 
                     </tr>
