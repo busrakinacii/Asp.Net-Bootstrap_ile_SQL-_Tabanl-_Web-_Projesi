@@ -33,10 +33,10 @@
                         Öğrenci Listesi
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                             <li><a href="Default.Aspx"><i class="glyphicon glyphicon-list"></i>Öğrenci Listesi</a></li>
+                        <li><a href="Default.Aspx"><i class="glyphicon glyphicon-list"></i>Öğrenci Listesi</a></li>
                         <li><a href="OgrenciEkle.Aspx"><i class="glyphicon glyphicon-plus"></i>Öğrenci Ekle</a></li>
                         <li><a href="OgrenciBul.Aspx"><i class="glyphicon glyphicon-search"></i>Öğrenci Bul</a></li>
-                   
+
                     </ul>
                 </li>
                 <li>
@@ -50,14 +50,20 @@
                     </a>
 
                 </li>
-                <li>
-                    <a href="#">
+                <li class="active">
+                    <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-bell"></i>
-                        Duyurular
+                        Duyuru Listesi
                     </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu2">
+                        <li><a href="DuyuruListesi.aspx"><i class="glyphicon glyphicon-list"></i>Duyuru Listesi</a></li>
+                        <li><a href="DuyuruEkle.Aspx"><i class="glyphicon glyphicon-plus"></i>Duyuru Ekle</a></li>
+
+                    </ul>
                 </li>
+
                 <li>
-                    <a href="#">
+                    <a href="NotListesi.aspx">
                         <i class="glyphicon glyphicon-pushpin"></i>
                         Notlar
                     </a>
@@ -106,12 +112,12 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Öğrenci Sınav Not Sistemi</a></li>
-                           
+
                         </ul>
                     </div>
                 </div>
             </nav>
-            
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
 
         </div>

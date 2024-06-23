@@ -440,6 +440,12 @@
     <Content Include="Dosyalar1\sidebar\style4.css" />
     <Content Include="Dosyalar1\sidebar\style5.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
+    <Content Include="DuyuruEkle.aspx" />
+    <Content Include="DuyuruGuncelle.aspx" />
+    <Content Include="DuyuruListesi.aspx" />
+    <Content Include="DuyuruSil.aspx" />
+    <Content Include="NotGuncelle.aspx" />
+    <Content Include="NotListesi.aspx" />
     <Content Include="OgrenciEkle.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciSil.aspx" />
@@ -457,6 +463,48 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruEkle.aspx.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruEkle.aspx.designer.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruGuncelle.aspx.cs">
+      <DependentUpon>DuyuruGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruGuncelle.aspx.designer.cs">
+      <DependentUpon>DuyuruGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.designer.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruSil.aspx.cs">
+      <DependentUpon>DuyuruSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruSil.aspx.designer.cs">
+      <DependentUpon>DuyuruSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotGuncelle.aspx.cs">
+      <DependentUpon>NotGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotGuncelle.aspx.designer.cs">
+      <DependentUpon>NotGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotListesi.aspx.cs">
+      <DependentUpon>NotListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotListesi.aspx.designer.cs">
+      <DependentUpon>NotListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciEkle.aspx.cs">
       <DependentUpon>OgrenciEkle.aspx</DependentUpon>
@@ -604,6 +652,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
