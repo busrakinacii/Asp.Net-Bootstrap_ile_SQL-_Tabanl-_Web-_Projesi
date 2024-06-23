@@ -6,9 +6,10 @@
 
     <form id="form1" runat="server">
         <div class="form-group">
+     
             <div>
-                <asp:Label for="DrpDersAd" runat="server" Style="margin-top: 10px">Ders Adı</asp:Label>
-                <asp:DropDownList ID="DrpDersAd" runat="server" CssClass="form-control"></asp:DropDownList>
+                <asp:Label for="TxtDersAd" runat="server" Style="margin-top: 10px">Ders AD</asp:Label>
+                <asp:TextBox ID="TxtDersAd" runat="server" CssClass="form-control" Style="margin-top: 5px"></asp:TextBox>
             </div>
             <div>
                 <asp:Label for="TxtOgrID" runat="server" Style="margin-top: 10px">Öğrenci ID</asp:Label>
@@ -39,8 +40,8 @@
                 <asp:Label for="TxtDurum" runat="server" Style="margin-top: 10px">Durum</asp:Label>
                 <asp:TextBox ID="TxtDurum" runat="server" CssClass="form-control" Style="margin-top: 5px"></asp:TextBox>
             </div>
-            <asp:Button ID="Button1" runat="server" Text="HESAPLA" CssClass="btn btn-info" Style="margin-top: 20px" />
-            <asp:Button ID="Button2" runat="server" Text="GÜNCELLE" CssClass="btn btn-primary" Style="margin-top: 20px" />
+            <asp:Button ID="Button1" runat="server" Text="HESAPLA" CssClass="btn btn-info" Style="margin-top: 20px" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" Text="GÜNCELLE" CssClass="btn btn-primary" Style="margin-top: 20px" OnClick="Button2_Click" />
         </div>
 
     </form>
