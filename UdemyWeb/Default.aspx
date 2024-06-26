@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th scope="col">ID</th>
+                 <th scope="col">NUMARA</th>
                 <th scope="col">AD</th>
                 <th scope="col">SOYAD</th>
                 <th scope="col">TELEFON</th>
@@ -22,6 +23,7 @@
                 <ItemTemplate>
                     <tr>
                         <td><%#Eval("OGRID") %></td>
+                        <td><%#Eval("NUMARA") %></td>
                         <td><%#Eval("OGRAD") %></td>
                         <td><%#Eval("OGRSOYAD") %></td>
                         <td><%#Eval("OGRTELEFON") %></td>

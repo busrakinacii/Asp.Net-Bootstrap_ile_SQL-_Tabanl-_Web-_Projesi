@@ -40,16 +40,24 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="DersListesi.aspx">
                         <i class="glyphicon glyphicon-education"></i>
                         Dersler
                     </a>
-                    <a href="#">
+
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-envelope"></i>
                         Mesajlar
                     </a>
-
+                    <ul class="collapse list-unstyled" id="homeSubmenu3">
+                        <li><a href="GelenMesajlar.aspx"><i class="glyphicon glyphicon-cloud-download"></i>Gelen Mesajlar</a></li>
+                        <li><a href="GidenMesajlar.Aspx"><i class="glyphicon glyphicon-cloud-upload"></i>Giden Mesajlar</a></li>
+                        <li><a href="MesajYaz.Aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a></li>
+                    </ul>
                 </li>
+
                 <li class="active">
                     <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-bell"></i>
@@ -58,7 +66,6 @@
                     <ul class="collapse list-unstyled" id="homeSubmenu2">
                         <li><a href="DuyuruListesi.aspx"><i class="glyphicon glyphicon-list"></i>Duyuru Listesi</a></li>
                         <li><a href="DuyuruEkle.Aspx"><i class="glyphicon glyphicon-plus"></i>Duyuru Ekle</a></li>
-
                     </ul>
                 </li>
 
@@ -68,28 +75,32 @@
                         Notlar
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <i class="glyphicon glyphicon-signal"></i>
                         İstatistikler
                     </a>
                 </li>
+
                 <li>
-                    <a href="#">
+                    <a href="Grafikler.aspx">
                         <i class="glyphicon glyphicon-object-align-bottom"></i>
                         Grafikler
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <i class="glyphicon glyphicon-picture"></i>
                         Galeri
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-cog"></i>
-                        Ayarlar
+                        <i class="glyphicon glyphicon-remove"></i>
+                        Çıkış Yap
                     </a>
                 </li>
             </ul>
