@@ -54,7 +54,7 @@
                     <ul class="collapse list-unstyled" id="homeSubmenu3">
                         <li><a href="GelenMesajlar.aspx"><i class="glyphicon glyphicon-cloud-download"></i>Gelen Mesajlar</a></li>
                         <li><a href="GidenMesajlar.Aspx"><i class="glyphicon glyphicon-cloud-upload"></i>Giden Mesajlar</a></li>
-                        <li><a href="MesajYaz.Aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a></li>
+                        <li><a href="MesajOlustur.Aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a></li>
                     </ul>
                 </li>
 
@@ -77,7 +77,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="Istatistikler.aspx">
                         <i class="glyphicon glyphicon-signal"></i>
                         İstatistikler
                     </a>
@@ -91,7 +91,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="Galeri.aspx">
                         <i class="glyphicon glyphicon-picture"></i>
                         Galeri
                     </a>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="GelenMesajlar.aspx.cs" Inherits="UdemyWeb.GelenMesajlar" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="GidenMesajlar.aspx.cs" Inherits="UdemyWeb.GidenMesajlar" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
@@ -8,7 +8,7 @@
         <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">GÖNDEREN</th>
+                <th scope="col">ALICI</th>
                 <th scope="col">BAŞLIK</th>
                 <th scope="col">İÇERİK</th>
                 <th scope="col">TARİH</th>
@@ -17,20 +17,20 @@
         </thead>
         <tbody>
             <asp:Repeater ID="Repeater1" runat="server">
-                <ItemTemplate>
+                <itemtemplate>
                     <tr>
                         <td><%#Eval("MESAJID") %></td>
-                        <td><%#Eval("GONDEREN") %></td>
+                        <td><%#Eval("ALICI") %></td>
                         <td><%#Eval("BASLIK") %></td>
                         <td><%#Eval("ICERIK") %></td>
                         <td><%#Eval("TARIH") %></td>
                         <%-- <td>
 
-                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/DuyuruSil.aspx?DUYURUID="+Eval("DUYURUID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/DuyuruGuncelle.aspx?DUYURUID="+Eval("DUYURUID") %>' CssClass="btn btn-success">Güncelle</asp:HyperLink>
-                        </td>--%>
+                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/DuyuruSil.aspx?DUYURUID="+Eval("DUYURUID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink>
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/DuyuruGuncelle.aspx?DUYURUID="+Eval("DUYURUID") %>' CssClass="btn btn-success">Güncelle</asp:HyperLink>
+                     </td>--%>
                     </tr>
-                </ItemTemplate>
+                </itemtemplate>
             </asp:Repeater>
         </tbody>
     </table>
