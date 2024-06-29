@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ogrenci.master.cs" Inherits="UdemyWeb.Ogrenci" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Sınav Not Sistemi</title>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <!-- Bootstrap CSS CDN -->
+    <link href="Dosyalar1/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Our Custom CSS -->
+    <link href="Dosyalar1/StyleSheet1.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Öğrenci Menüsü</h3>
+                <strong>MN</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+
+
+                <li>
+                    <a href="DersListesi.aspx">
+                        <i class="glyphicon glyphicon-user"></i>
+                        Profilim
+                    </a>
+
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        Mesajlar
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu3">
+                        <li><a href="GelenMesajlar.aspx"><i class="glyphicon glyphicon-cloud-download"></i>Gelen Mesajlar</a></li>
+                        <li><a href="GidenMesajlar.Aspx"><i class="glyphicon glyphicon-cloud-upload"></i>Giden Mesajlar</a></li>
+                        <li><a href="MesajOlustur.Aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Duyurular.aspx">
+                        <i class="glyphicon glyphicon-bell"></i>
+                        Duyurular
+                    </a>
+                </li>
+
+                <li>
+                    <a href="NotListesi.aspx">
+                        <i class="glyphicon glyphicon-pushpin"></i>
+                        Sınav Notları
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-remove"></i>
+                        Çıkış Yap
+                    </a>
+                </li>
+            </ul>
+            <div style="margin-left: 10px">Ad Soyad </div>
+            <div>
+                <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/image/image.png" Width="120px" Style="margin-left: 10px" />
+            </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Öğrenci Sınav Not Sistemi</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="Dosyalar1/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="Dosyalar1/js-bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
