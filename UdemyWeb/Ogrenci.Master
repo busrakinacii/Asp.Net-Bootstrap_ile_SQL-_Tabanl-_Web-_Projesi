@@ -30,7 +30,7 @@
 
 
                 <li>
-                    <a href="DersListesi.aspx">
+                    <a href="OgrenciDefault.aspx">
                         <i class="glyphicon glyphicon-user"></i>
                         Profilim
                     </a>
@@ -42,9 +42,9 @@
                         Mesajlar
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu3">
-                        <li><a href="GelenMesajlar.aspx"><i class="glyphicon glyphicon-cloud-download"></i>Gelen Mesajlar</a></li>
-                        <li><a href="GidenMesajlar.Aspx"><i class="glyphicon glyphicon-cloud-upload"></i>Giden Mesajlar</a></li>
-                        <li><a href="MesajOlustur.Aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a></li>
+                        <li><a href="OgrenciGelenMesajlar.aspx"><i class="glyphicon glyphicon-cloud-download"></i>Gelen Mesajlar</a></li>
+                        <li><a href="OgrenciGidenMesajlar.aspx"><i class="glyphicon glyphicon-cloud-upload"></i>Giden Mesajlar</a></li>
+                        <li><a href="OgrenciMesajOlustur.aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a></li>
                     </ul>
                 </li>
 
@@ -56,7 +56,7 @@
                 </li>
 
                 <li>
-                    <a href="NotListesi.aspx">
+                    <a href="OgrenciNotu.aspx">
                         <i class="glyphicon glyphicon-pushpin"></i>
                         Sınav Notları
                     </a>

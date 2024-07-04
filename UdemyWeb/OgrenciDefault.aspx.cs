@@ -12,7 +12,7 @@ namespace UdemyWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            TxtNumara.Text = Request.QueryString["Numara"];
+            TxtNumara.Text = Session["Numara"].ToString();
             DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
 
             TxtAdSoyad.Text = "AD SOYAD : " + dt.OgrenciPaneliGetir(TxtNumara.Text)[0].OGRAD + " " + dt.OgrenciPaneliGetir(TxtNumara.Text)[0].OGRSOYAD;

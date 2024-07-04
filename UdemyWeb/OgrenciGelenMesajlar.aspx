@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="GidenMesajlar.aspx.cs" Inherits="UdemyWeb.GidenMesajlar" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogrenci.Master" AutoEventWireup="true" CodeBehind="OgrenciGelenMesajlar.aspx.cs" Inherits="UdemyWeb.OgrenciGelenMesajlar" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
@@ -7,9 +7,7 @@
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-
-                <th scope="col">ALICI</th>
-           
+                <th scope="col">GÖNDEREN</th>
                 <th scope="col">BAŞLIK</th>
                 <th scope="col">İÇERİK</th>
                 <th scope="col">TARİH</th>
@@ -19,22 +17,16 @@
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
+                        <td><%#Eval("GONDEREN")%>=><%#Eval("OgretmenAd")%><%#Eval("OgrenciAd")%></td>
 
-                        <td><%#Eval("ALICI")%>=><%#Eval("OgretmenAd") %><%#Eval("OgrenciAd") %></td>
-                          
                         <td><%#Eval("BASLIK") %></td>
                         <td><%#Eval("ICERIK") %></td>
                         <td><%#Eval("TARIH") %></td>
-                        <%-- <td>
 
-                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/DuyuruSil.aspx?DUYURUID="+Eval("DUYURUID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink>
-                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/DuyuruGuncelle.aspx?DUYURUID="+Eval("DUYURUID") %>' CssClass="btn btn-success">Güncelle</asp:HyperLink>
-                     </td>--%>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>
         </tbody>
     </table>
-
 
 </asp:Content>

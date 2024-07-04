@@ -13,7 +13,11 @@ namespace UdemyWeb
         {
 
             TxtNumara.Text = Request.QueryString["Numara"];
-            
+
+            if (Page.IsPostBack != true)
+            {
+
+            }
 
             //TxtSifre.Text = dt.OgrenciPaneliGetir(TxtNumara.Text)[0].OGRSIFRE;
 
@@ -24,7 +28,8 @@ namespace UdemyWeb
         protected void Button1_Click(object sender, EventArgs e)
         {
             DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
-           
+            dt.OgrenciSifreGuncelle(TxtSifre.Text, TxtNumara.Text);
+            Response.Redirect("OgrenciDefault.aspx?NUMARA=" + TxtNumara.Text);
         }
     }
 }

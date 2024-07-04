@@ -62,7 +62,7 @@
 
             <asp:Button ID="Button1" runat="server" Text="Giriş Yap" CssClass="btn btn-warning" Width="700px" Style="margin-top: 15px; font-weight: bold;" OnClick="Button1_Click" />
          
-            <asp:Button ID="Button2" runat="server" Text="İptal Et" CssClass="btn btn-danger" Width="200px" Style="margin-top: 15px; font-weight: bold;" />
+            <asp:Button ID="Button2" runat="server" Text="Öğretmen Girişi" CssClass="btn btn-danger" Width="200px" Style="margin-top: 15px; font-weight: bold;" OnClick="Button2_Click" />
             <asp:Button ID="Button3" runat="server" Text="Şifremi Unuttum" CssClass="btn btn-default" Width="300px" Style="margin-top: 15px; font-weight: bold;" />
             <asp:Button ID="Button4" runat="server" Text="Yardım" CssClass="btn btn-info" Width="190px" Style="margin-top: 15px; font-weight: bold;"  />
             </strong>

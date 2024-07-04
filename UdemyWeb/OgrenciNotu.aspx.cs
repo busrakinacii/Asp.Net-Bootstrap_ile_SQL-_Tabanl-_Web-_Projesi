@@ -7,14 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace UdemyWeb
 {
-    public partial class GidenMesajlar : System.Web.UI.Page
+    public partial class OgrenciNotu : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            DataSet1TableAdapters.TBL_MESAJLARTableAdapter dt = new DataSet1TableAdapters.TBL_MESAJLARTableAdapter();
-            Repeater1.DataSource = dt.OgretmenGidenMesajlar(Session["OgrtNumara"].ToString());
+            DataSet1TableAdapters.OgrNotlarTableAdapter dt = new DataSet1TableAdapters.OgrNotlarTableAdapter();
+            Repeater1.DataSource = dt.OgrenciNotu(Session["Numara"].ToString());
             Repeater1.DataBind();
+
 
         }
     }

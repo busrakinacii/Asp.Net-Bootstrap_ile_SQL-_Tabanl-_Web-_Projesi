@@ -463,8 +463,12 @@
     <Content Include="NotListesi.aspx" />
     <Content Include="OgrenciDefault.aspx" />
     <Content Include="OgrenciEkle.aspx" />
+    <Content Include="OgrenciGelenMesajlar.aspx" />
+    <Content Include="OgrenciGidenMesajlar.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciGuncelle2.aspx" />
+    <Content Include="OgrenciMesajOlustur.aspx" />
+    <Content Include="OgrenciNotu.aspx" />
     <Content Include="OgrenciSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -621,6 +625,20 @@
     <Compile Include="OgrenciEkle.aspx.designer.cs">
       <DependentUpon>OgrenciEkle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OgrenciGelenMesajlar.aspx.cs">
+      <DependentUpon>OgrenciGelenMesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGelenMesajlar.aspx.designer.cs">
+      <DependentUpon>OgrenciGelenMesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGidenMesajlar.aspx.cs">
+      <DependentUpon>OgrenciGidenMesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGidenMesajlar.aspx.designer.cs">
+      <DependentUpon>OgrenciGidenMesajlar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OgrenciGuncelle.aspx.cs">
       <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -634,6 +652,20 @@
     </Compile>
     <Compile Include="OgrenciGuncelle2.aspx.designer.cs">
       <DependentUpon>OgrenciGuncelle2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciMesajOlustur.aspx.cs">
+      <DependentUpon>OgrenciMesajOlustur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciMesajOlustur.aspx.designer.cs">
+      <DependentUpon>OgrenciMesajOlustur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciNotu.aspx.cs">
+      <DependentUpon>OgrenciNotu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciNotu.aspx.designer.cs">
+      <DependentUpon>OgrenciNotu.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciSil.aspx.cs">
       <DependentUpon>OgrenciSil.aspx</DependentUpon>

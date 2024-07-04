@@ -27,7 +27,8 @@ namespace UdemyWeb
             SqlDataReader dr = komut.ExecuteReader();
             if(dr.Read())
             {
-                Response.Redirect("OgrenciDefault.Aspx?Numara="+TxtNumara.Text);
+                Session.Add("Numara", TxtNumara.Text);
+                Response.Redirect("OgrenciDefault.Aspx");
             }
             else
             {
@@ -36,6 +37,26 @@ namespace UdemyWeb
             }
             connect.Close();
           
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            connect.Open();
+            SqlCommand komut = new SqlCommand("Select * From TBL_OGRETMEN where OGRTNUMARA=@p1 and OGRTSIFRE=@p2 ", connect);
+            komut.Parameters.AddWithValue("@p1", TxtNumara.Text);
+            komut.Parameters.AddWithValue("@p2", TxtSifre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                Session.Add("OgrtNumara", TxtNumara.Text);
+                Response.Redirect("Default.Aspx");
+            }
+            else
+            {
+                MessageBox.Show("Hatalı Kullanıcı Adı Veya Şifre", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //TxtSifre.Text = "Hatalı Şifre";
+            }
+            connect.Close();
         }
     }
 }

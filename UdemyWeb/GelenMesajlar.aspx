@@ -7,20 +7,23 @@
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th scope="col">ID</th>
+
                 <th scope="col">GÖNDEREN</th>
+                <%-- <th scope="col">ÖĞRETMEN</th>
+                <th scope="col">ÖĞRENCİ</th>--%>
                 <th scope="col">BAŞLIK</th>
                 <th scope="col">İÇERİK</th>
                 <th scope="col">TARİH</th>
-                <th scope="col">İŞLEMLER</th>
             </tr>
         </thead>
         <tbody>
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
-                        <td><%#Eval("MESAJID") %></td>
-                        <td><%#Eval("GONDEREN") %></td>
+
+                        <td><%#Eval("GONDEREN")%>=><%#Eval("OgretmenAd")%><%#Eval("OgrenciAd")%></td>
+                        <%-- <td><%#Eval("OgretmenAd") %></td>
+                            <td><%#Eval("OgrenciAd") %></td>--%>
                         <td><%#Eval("BASLIK") %></td>
                         <td><%#Eval("ICERIK") %></td>
                         <td><%#Eval("TARIH") %></td>
